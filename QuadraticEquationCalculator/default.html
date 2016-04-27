@@ -1,0 +1,55 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>QuadraticEquationCalculator</title>
+
+    <!-- WinJS references -->
+    <link href="WinJS/css/ui-dark.css" rel="stylesheet" />
+    <script src="WinJS/js/base.js"></script>
+    <script src="WinJS/js/ui.js"></script>
+
+    <!-- QuadraticEquationCalculator references -->
+    <link href="/css/default.css" rel="stylesheet" />
+    <script src="/js/default.js"></script>
+
+
+</head>
+<body class="win-type-body" style="background-color: #0036e6;">
+
+
+    <form position=left:50px>
+
+
+        <br><br>
+
+        <table style="width:70%; left:1000px;" position="fixed">
+
+            <tr><td></td><td><label>Factor A:</label></td><td><label>Factor B:</label></td><td><label>Factor C:</label></td></tr>
+            <tr>
+                <td></td>
+                <td><textarea id="Factor_A" type="number" name="Factor_A" style="width:100px; height:15px"></textarea><label> * X*X +</label></td>
+                <td><textarea id="Factor_B" type="number" name="Factor_B" style="width:100px; height:15px"></textarea> <label>*X +</label></td>
+                <td><textarea id="Factor_C" type="number" name="Factor_C" style="width:100px; height:15px"></textarea>  <label>= 0</label></td>
+            </tr>
+            <tr><td></td><td><input type="button" value="Calculate" onclick="getValue();" /></td> </tr>
+        </table>
+
+        <table style="width:50%; left:1000px;" position="relative">
+            <tr><td></td><td></td><td><label>D =</label></td><td> <p id="Dis"></p></td> </tr>
+        </table>
+        <table style="width:70%; left:10px;" position="relative">
+            <tr><td></td><td><label>Conclusion:</label></td><td> <p id="Conclusion"></p></td> </tr>
+        </table>
+        <table style="width:50%; left:1000px;" position="relative">
+            <tr><td></td><td></td><td><label>X1 =</label></td><td><p id="X1"></p></td> </tr>
+        </table>
+        <table style="width:50%; left:1000px;" position="relative">
+            <tr><td></td><td></td><td><label> X2 =</label></td><td><p id="X2"></p></td> </tr>
+        </table>
+
+    </form>
+
+    <script src="WinJS/js/QEcalc.js"></script>
+</body>
+</html>
